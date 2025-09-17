@@ -11,6 +11,7 @@ from ...models.photo import (
     PhotoCountResponse,
     PhotoDeleteRequest,
     PhotoDeleteResponse,
+    PhotoIdParam,
     PhotoInfoRequest,
     PhotoInfoResponse,
     PhotoListParam,
@@ -29,9 +30,7 @@ class AsyncPhotoService:
     def __init__(self, client: AsyncBaseClient):
         self._client = client
 
-    async def get_count(
-        self, access_token: str, uid: Optional[int] = None
-    ) -> PhotoCountResponse:
+    async def get_count(self, access_token: str, uid: Optional[int] = None) -> PhotoCountResponse:
         """获取相册图片数量
 
         OpenAPI: `open.photo.count` (GET)
@@ -84,9 +83,7 @@ class AsyncPhotoService:
         )
         return await self._client.execute(request, PhotoListResponse)
 
-    async def start_upload(
-        self, access_token: str, uid: Optional[int] = None
-    ) -> PhotoStartUploadResponse:
+    async def start_upload(self, access_token: str, uid: Optional[int] = None) -> PhotoStartUploadResponse:
         """获取上传令牌
 
         OpenAPI: `open.photo.start.upload` (POST)
@@ -103,14 +100,10 @@ class AsyncPhotoService:
         Raises:
             KwaixiaodianAPIError: 平台返回错误或响应解析失败。
         """
-        request = PhotoStartUploadRequest(
-            access_token=access_token, uid=uid, api_version="1"
-        )
+        request = PhotoStartUploadRequest(access_token=access_token, uid=uid, api_version="1")
         return await self._client.execute(request, PhotoStartUploadResponse)
 
-    async def publish(
-        self, access_token: str, upload_token: str, uid: Optional[int] = None
-    ) -> PhotoPublishResponse:
+    async def publish(self, access_token: str, upload_token: str, uid: Optional[int] = None) -> PhotoPublishResponse:
         """发布上传的图片
 
         OpenAPI: `open.photo.publish` (POST)
@@ -136,9 +129,7 @@ class AsyncPhotoService:
         )
         return await self._client.execute(request, PhotoPublishResponse)
 
-    async def delete(
-        self, access_token: str, photo_id: str, uid: Optional[int] = None
-    ) -> PhotoDeleteResponse:
+    async def delete(self, access_token: str, photo_id: str, uid: Optional[int] = None) -> PhotoDeleteResponse:
         """删除相册图片
 
         OpenAPI: `open.photo.delete` (POST)
@@ -159,14 +150,12 @@ class AsyncPhotoService:
         request = PhotoDeleteRequest(
             access_token=access_token,
             uid=uid,
-            param={"photoId": photo_id},
+            param=PhotoIdParam(photo_id=photo_id),
             api_version="1",
         )
         return await self._client.execute(request, PhotoDeleteResponse)
 
-    async def info(
-        self, access_token: str, photo_id: str, uid: Optional[int] = None
-    ) -> PhotoInfoResponse:
+    async def info(self, access_token: str, photo_id: str, uid: Optional[int] = None) -> PhotoInfoResponse:
         """查询图片详情
 
         OpenAPI: `open.photo.info` (GET)
@@ -187,7 +176,7 @@ class AsyncPhotoService:
         request = PhotoInfoRequest(
             access_token=access_token,
             uid=uid,
-            param={"photoId": photo_id},
+            param=PhotoIdParam(photo_id=photo_id),
             api_version="1",
         )
         return await self._client.execute(request, PhotoInfoResponse)
@@ -197,9 +186,7 @@ class SyncPhotoService:
     def __init__(self, client: SyncBaseClient):
         self._client = client
 
-    def get_count(
-        self, access_token: str, uid: Optional[int] = None
-    ) -> PhotoCountResponse:
+    def get_count(self, access_token: str, uid: Optional[int] = None) -> PhotoCountResponse:
         """获取相册图片数量（同步）
 
         OpenAPI: `open.photo.count` (GET)
@@ -252,9 +239,7 @@ class SyncPhotoService:
         )
         return self._client.execute(request, PhotoListResponse)
 
-    def start_upload(
-        self, access_token: str, uid: Optional[int] = None
-    ) -> PhotoStartUploadResponse:
+    def start_upload(self, access_token: str, uid: Optional[int] = None) -> PhotoStartUploadResponse:
         """获取上传令牌（同步）
 
         OpenAPI: `open.photo.start.upload` (POST)
@@ -271,14 +256,10 @@ class SyncPhotoService:
         Raises:
             KwaixiaodianAPIError: 平台返回错误或响应解析失败。
         """
-        request = PhotoStartUploadRequest(
-            access_token=access_token, uid=uid, api_version="1"
-        )
+        request = PhotoStartUploadRequest(access_token=access_token, uid=uid, api_version="1")
         return self._client.execute(request, PhotoStartUploadResponse)
 
-    def publish(
-        self, access_token: str, upload_token: str, uid: Optional[int] = None
-    ) -> PhotoPublishResponse:
+    def publish(self, access_token: str, upload_token: str, uid: Optional[int] = None) -> PhotoPublishResponse:
         """发布上传的图片（同步）
 
         OpenAPI: `open.photo.publish` (POST)
@@ -304,9 +285,7 @@ class SyncPhotoService:
         )
         return self._client.execute(request, PhotoPublishResponse)
 
-    def delete(
-        self, access_token: str, photo_id: str, uid: Optional[int] = None
-    ) -> PhotoDeleteResponse:
+    def delete(self, access_token: str, photo_id: str, uid: Optional[int] = None) -> PhotoDeleteResponse:
         """删除相册图片（同步）
 
         OpenAPI: `open.photo.delete` (POST)
@@ -327,14 +306,12 @@ class SyncPhotoService:
         request = PhotoDeleteRequest(
             access_token=access_token,
             uid=uid,
-            param={"photoId": photo_id},
+            param=PhotoIdParam(photo_id=photo_id),
             api_version="1",
         )
         return self._client.execute(request, PhotoDeleteResponse)
 
-    def info(
-        self, access_token: str, photo_id: str, uid: Optional[int] = None
-    ) -> PhotoInfoResponse:
+    def info(self, access_token: str, photo_id: str, uid: Optional[int] = None) -> PhotoInfoResponse:
         """查询图片详情（同步）
 
         OpenAPI: `open.photo.info` (GET)
@@ -355,7 +332,7 @@ class SyncPhotoService:
         request = PhotoInfoRequest(
             access_token=access_token,
             uid=uid,
-            param={"photoId": photo_id},
+            param=PhotoIdParam(photo_id=photo_id),
             api_version="1",
         )
         return self._client.execute(request, PhotoInfoResponse)

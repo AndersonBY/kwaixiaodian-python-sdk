@@ -8,22 +8,31 @@
 from typing import List, Optional
 
 from ...models.sms import (
+    SmsBatchSendParam,
     SmsBatchSendRequest,
     SmsBatchSendResponse,
+    SmsExpressSendParam,
     SmsExpressSendRequest,
     SmsExpressSendResponse,
     SmsGenericResponse,
     SmsItemRequest,
+    SmsSendParam,
     SmsSendRequest,
     SmsSendResponse,
     SmsSendResultParam,
     SmsSendResultRequest,
     SmsSendResultResponse,
+    SmsSignApplyCreateParam,
     SmsSignApplyCreateRequest,
+    SmsSignDeleteParam,
     SmsSignDeleteRequest,
+    SmsSignViewParam,
     SmsSignViewRequest,
+    SmsTemplateApplyCreateParam,
     SmsTemplateApplyCreateRequest,
+    SmsTemplateDeleteParam,
     SmsTemplateDeleteRequest,
+    SmsTemplateViewParam,
     SmsTemplateViewRequest,
 )
 from ..base import AsyncBaseClient, SyncBaseClient
@@ -54,7 +63,10 @@ class AsyncSmsService:
             KwaixiaodianAPIError: 当开放平台返回错误码或解析失败时抛出。
         """
         req = SmsSignApplyCreateRequest(
-            access_token=access_token, uid=uid, param={"sign": sign}, api_version="1"
+            access_token=access_token,
+            uid=uid,
+            param=SmsSignApplyCreateParam(sign=sign),
+            api_version="1"
         )
         return await self._client.execute(req, SmsGenericResponse)
 
@@ -81,7 +93,7 @@ class AsyncSmsService:
         req = SmsSignDeleteRequest(
             access_token=access_token,
             uid=uid,
-            param={"signId": sign_id},
+            param=SmsSignDeleteParam(sign_id=sign_id),
             api_version="1",
         )
         return await self._client.execute(req, SmsGenericResponse)
@@ -118,12 +130,12 @@ class AsyncSmsService:
         req = SmsSignViewRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signLike": sign_like,
-                "pageNum": page_num,
-                "pageSize": page_size,
-                "signId": sign_id,
-            },
+            param=SmsSignViewParam(
+                sign_like=sign_like,
+                page_num=page_num,
+                page_size=page_size,
+                sign_id=sign_id,
+            ),
             api_version="1",
         )
         return await self._client.execute(req, SmsGenericResponse)
@@ -158,11 +170,11 @@ class AsyncSmsService:
         req = SmsTemplateApplyCreateRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "templateName": template_name,
-                "templateContent": template_content,
-                "templateType": template_type,
-            },
+            param=SmsTemplateApplyCreateParam(
+                template_name=template_name,
+                template_content=template_content,
+                template_type=template_type,
+            ),
             api_version="1",
         )
         return await self._client.execute(req, SmsGenericResponse)
@@ -190,7 +202,7 @@ class AsyncSmsService:
         req = SmsTemplateDeleteRequest(
             access_token=access_token,
             uid=uid,
-            param={"templateId": template_id},
+            param=SmsTemplateDeleteParam(template_id=template_id),
             api_version="1",
         )
         return await self._client.execute(req, SmsGenericResponse)
@@ -227,12 +239,12 @@ class AsyncSmsService:
         req = SmsTemplateViewRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "templateId": template_id,
-                "templateName": template_name,
-                "pageNum": page_num,
-                "pageSize": page_size,
-            },
+            param=SmsTemplateViewParam(
+                template_id=template_id,
+                template_name=template_name,
+                page_num=page_num,
+                page_size=page_size,
+            ),
             api_version="1",
         )
         return await self._client.execute(req, SmsGenericResponse)
@@ -274,13 +286,13 @@ class AsyncSmsService:
         req = SmsSendRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signId": sign_id,
-                "templateId": template_id,
-                "templateParam": template_param,
-                "mobile": mobile,
-                "extra": extra,
-            },
+            param=SmsSendParam(
+                sign_id=sign_id,
+                template_id=template_id,
+                template_param=template_param,
+                mobile=mobile,
+                extra=extra,
+            ),
             api_version="1",
         )
         return await self._client.execute(req, SmsSendResponse)
@@ -317,12 +329,12 @@ class AsyncSmsService:
         req = SmsBatchSendRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signId": sign_id,
-                "templateParam": template_param,
-                "templateId": template_id,
-                "itemRequest": item_request,
-            },
+            param=SmsBatchSendParam(
+                sign_id=sign_id,
+                template_param=template_param,
+                template_id=template_id,
+                item_request=item_request,
+            ),
             api_version="1",
         )
         return await self._client.execute(req, SmsBatchSendResponse)
@@ -361,13 +373,13 @@ class AsyncSmsService:
         req = SmsExpressSendRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signId": sign_id,
-                "templateId": template_id,
-                "templateParam": template_param,
-                "waybillCode": waybill_code,
-                "extra": extra,
-            },
+            param=SmsExpressSendParam(
+                sign_id=sign_id,
+                template_id=template_id,
+                template_param=template_param,
+                waybill_code=waybill_code,
+                extra=extra,
+            ),
             api_version="1",
         )
         return await self._client.execute(req, SmsExpressSendResponse)
@@ -453,7 +465,10 @@ class SyncSmsService:
             KwaixiaodianAPIError: 当开放平台返回错误码或解析失败时抛出。
         """
         req = SmsSignApplyCreateRequest(
-            access_token=access_token, uid=uid, param={"sign": sign}, api_version="1"
+            access_token=access_token,
+            uid=uid,
+            param=SmsSignApplyCreateParam(sign=sign),
+            api_version="1"
         )
         return self._client.execute(req, SmsGenericResponse)
 
@@ -478,7 +493,7 @@ class SyncSmsService:
         req = SmsSignDeleteRequest(
             access_token=access_token,
             uid=uid,
-            param={"signId": sign_id},
+            param=SmsSignDeleteParam(sign_id=sign_id),
             api_version="1",
         )
         return self._client.execute(req, SmsGenericResponse)
@@ -515,12 +530,12 @@ class SyncSmsService:
         req = SmsSignViewRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signLike": sign_like,
-                "pageNum": page_num,
-                "pageSize": page_size,
-                "signId": sign_id,
-            },
+            param=SmsSignViewParam(
+                sign_like=sign_like,
+                page_num=page_num,
+                page_size=page_size,
+                sign_id=sign_id,
+            ),
             api_version="1",
         )
         return self._client.execute(req, SmsGenericResponse)
@@ -555,11 +570,11 @@ class SyncSmsService:
         req = SmsTemplateApplyCreateRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "templateName": template_name,
-                "templateContent": template_content,
-                "templateType": template_type,
-            },
+            param=SmsTemplateApplyCreateParam(
+                template_name=template_name,
+                template_content=template_content,
+                template_type=template_type,
+            ),
             api_version="1",
         )
         return self._client.execute(req, SmsGenericResponse)
@@ -587,7 +602,7 @@ class SyncSmsService:
         req = SmsTemplateDeleteRequest(
             access_token=access_token,
             uid=uid,
-            param={"templateId": template_id},
+            param=SmsTemplateDeleteParam(template_id=template_id),
             api_version="1",
         )
         return self._client.execute(req, SmsGenericResponse)
@@ -624,12 +639,12 @@ class SyncSmsService:
         req = SmsTemplateViewRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "templateId": template_id,
-                "templateName": template_name,
-                "pageNum": page_num,
-                "pageSize": page_size,
-            },
+            param=SmsTemplateViewParam(
+                template_id=template_id,
+                template_name=template_name,
+                page_num=page_num,
+                page_size=page_size,
+            ),
             api_version="1",
         )
         return self._client.execute(req, SmsGenericResponse)
@@ -668,13 +683,13 @@ class SyncSmsService:
         req = SmsSendRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signId": sign_id,
-                "templateId": template_id,
-                "templateParam": template_param,
-                "mobile": mobile,
-                "extra": extra,
-            },
+            param=SmsSendParam(
+                sign_id=sign_id,
+                template_id=template_id,
+                template_param=template_param,
+                mobile=mobile,
+                extra=extra,
+            ),
             api_version="1",
         )
         return self._client.execute(req, SmsSendResponse)
@@ -711,12 +726,12 @@ class SyncSmsService:
         req = SmsBatchSendRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signId": sign_id,
-                "templateParam": template_param,
-                "templateId": template_id,
-                "itemRequest": item_request,
-            },
+            param=SmsBatchSendParam(
+                sign_id=sign_id,
+                template_param=template_param,
+                template_id=template_id,
+                item_request=item_request,
+            ),
             api_version="1",
         )
         return self._client.execute(req, SmsBatchSendResponse)
@@ -755,13 +770,13 @@ class SyncSmsService:
         req = SmsExpressSendRequest(
             access_token=access_token,
             uid=uid,
-            param={
-                "signId": sign_id,
-                "templateId": template_id,
-                "templateParam": template_param,
-                "waybillCode": waybill_code,
-                "extra": extra,
-            },
+            param=SmsExpressSendParam(
+                sign_id=sign_id,
+                template_id=template_id,
+                template_param=template_param,
+                waybill_code=waybill_code,
+                extra=extra,
+            ),
             api_version="1",
         )
         return self._client.execute(req, SmsExpressSendResponse)
