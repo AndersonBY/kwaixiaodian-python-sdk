@@ -66,7 +66,7 @@ class AsyncSmsService:
             access_token=access_token,
             uid=uid,
             param=SmsSignApplyCreateParam(sign=sign),
-            api_version="1"
+            api_version="1",
         )
         return await self._client.execute(req, SmsGenericResponse)
 
@@ -468,7 +468,7 @@ class SyncSmsService:
             access_token=access_token,
             uid=uid,
             param=SmsSignApplyCreateParam(sign=sign),
-            api_version="1"
+            api_version="1",
         )
         return self._client.execute(req, SmsGenericResponse)
 

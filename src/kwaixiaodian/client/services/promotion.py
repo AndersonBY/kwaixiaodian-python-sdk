@@ -87,7 +87,10 @@ class AsyncPromotionService:
             KwaixiaodianAPIError: 当平台返回错误码或解析失败。
         """
         req = PromotionCouponCreateRequest(
-            access_token=access_token, uid=uid, param=PromotionCouponCreateParam(**kwargs), api_version="1"
+            access_token=access_token,
+            uid=uid,
+            param=PromotionCouponCreateParam(**kwargs),
+            api_version="1",
         )
         return await self._client.execute(req, PromotionGenericResponse)
 
@@ -283,7 +286,9 @@ class AsyncPromotionService:
         req = PromotionCouponStatisticRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCouponStatisticParam(coupon_id=coupon_id, business_line=business_line),
+            param=PromotionCouponStatisticParam(
+                coupon_id=coupon_id, business_line=business_line
+            ),
             api_version="1",
         )
         return await self._client.execute(req, PromotionGenericResponse)
@@ -316,7 +321,9 @@ class AsyncPromotionService:
         req = PromotionCouponStockAddRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCouponStockAddParam(coupon_id=coupon_id, increment_num=increment_num),
+            param=PromotionCouponStockAddParam(
+                coupon_id=coupon_id, increment_num=increment_num
+            ),
             api_version="1",
         )
         return await self._client.execute(req, PromotionGenericResponse)
@@ -494,7 +501,9 @@ class AsyncPromotionService:
         req = PromotionCrowdListRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCrowdListParam(crowd_type=crowd_type, page_num=page_num, page_size=page_size),
+            param=PromotionCrowdListParam(
+                crowd_type=crowd_type, page_num=page_num, page_size=page_size
+            ),
             api_version="1",
         )
         return await self._client.execute(req, PromotionGenericResponse)
@@ -527,7 +536,9 @@ class AsyncPromotionService:
         req = PromotionCrowdPredictRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCrowdPredictParam(tag_condition=tag_condition, ext_json=ext_json),
+            param=PromotionCrowdPredictParam(
+                tag_condition=tag_condition, ext_json=ext_json
+            ),
             api_version="1",
         )
         return await self._client.execute(req, PromotionGenericResponse)
@@ -672,7 +683,10 @@ class SyncPromotionService:
         Java: PromotionCouponCreateRequest
         """
         req = PromotionCouponCreateRequest(
-            access_token=access_token, uid=uid, param=PromotionCouponCreateParam(**kwargs), api_version="1"
+            access_token=access_token,
+            uid=uid,
+            param=PromotionCouponCreateParam(**kwargs),
+            api_version="1",
         )
         return self._client.execute(req, PromotionGenericResponse)
 
@@ -870,7 +884,9 @@ class SyncPromotionService:
         req = PromotionCouponStatisticRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCouponStatisticParam(coupon_id=coupon_id, business_line=business_line),
+            param=PromotionCouponStatisticParam(
+                coupon_id=coupon_id, business_line=business_line
+            ),
             api_version="1",
         )
         return self._client.execute(req, PromotionGenericResponse)
@@ -903,7 +919,9 @@ class SyncPromotionService:
         req = PromotionCouponStockAddRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCouponStockAddParam(coupon_id=coupon_id, increment_num=increment_num),
+            param=PromotionCouponStockAddParam(
+                coupon_id=coupon_id, increment_num=increment_num
+            ),
             api_version="1",
         )
         return self._client.execute(req, PromotionGenericResponse)
@@ -1080,7 +1098,9 @@ class SyncPromotionService:
         req = PromotionCrowdListRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCrowdListParam(crowd_type=crowd_type, page_num=page_num, page_size=page_size),
+            param=PromotionCrowdListParam(
+                crowd_type=crowd_type, page_num=page_num, page_size=page_size
+            ),
             api_version="1",
         )
         return self._client.execute(req, PromotionGenericResponse)
@@ -1113,7 +1133,9 @@ class SyncPromotionService:
         req = PromotionCrowdPredictRequest(
             access_token=access_token,
             uid=uid,
-            param=PromotionCrowdPredictParam(tag_condition=tag_condition, ext_json=ext_json),
+            param=PromotionCrowdPredictParam(
+                tag_condition=tag_condition, ext_json=ext_json
+            ),
             api_version="1",
         )
         return self._client.execute(req, PromotionGenericResponse)
