@@ -1,0 +1,564 @@
+{
+  "2": [
+    {
+      "pageSign": "2fea81c17e816804fda99985ada9ac241650960171617",
+      "docName": "K0011 - 用户如何扫码授权使用",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0011 - 用户如何扫码授权使用.md"
+    },
+    {
+      "pageSign": "a5c075302512cbf52ff9437d9f56cb0f1647412682183",
+      "docName": "K0010 - 不属于此应用的授权用户或测试用户",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0010 - 不属于此应用的授权用户或测试用户.md"
+    },
+    {
+      "pageSign": "61e77001e924b34c3d8b3180cd9648151647412312424",
+      "docName": "K0009 - 报错 Invalid url",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0009 - 报错 Invalid url.md"
+    },
+    {
+      "pageSign": "e62738fd59e01aae65ed2577a46f00151636685473087",
+      "docName": "K0008 - 错误信息：refreshToken.discarded",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0008 - 错误信息：refreshToken.discarded.md"
+    },
+    {
+      "pageSign": "c4ce45a7e0e02f54e1b5609c0868f4d51617695440483",
+      "docName": "K0007 - 授权无法识别用户昵称",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0007 - 授权无法识别用户昵称.md"
+    },
+    {
+      "pageSign": "b364ea3121bf4524118721248de7fb911618307135717",
+      "docName": "K0006 - 错误信息：AUTHORIZATION_REVOKED",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0006 - 错误信息：AUTHORIZATION_REVOKED.md"
+    },
+    {
+      "pageSign": "0091dfcb14a85a43a8186ebaec2ff5231618231689034",
+      "docName": "K0005 - API接口返回 主账号不存在",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0005 - API接口返回 主账号不存在.md"
+    },
+    {
+      "pageSign": "002c1c7eb1c780b349f8c81a78772e711618229933953",
+      "docName": "K0004 - 访问接口时返回“鉴权失败”是什么原因？",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0004 - 访问接口时返回“鉴权失败”是什么原因？.md"
+    },
+    {
+      "pageSign": "0fadf84ba78049e96f4bb94ea37b69351618228070897",
+      "docName": "K0003 - 调用API时报错 “token中无scope权限”",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0003 - 调用API时报错 “token中无scope权限”.md"
+    },
+    {
+      "pageSign": "62e2cab86b21dabdede9366c7add7cf21616590770639",
+      "docName": "K0002 - 交易功能上线之后服务商如何进行上线前开发测试",
+      "path": "docs/docType_2/开放平台/应用授权",
+      "filename": "K0002 - 交易功能上线之后服务商如何进行上线前开发测试.md"
+    },
+    {
+      "pageSign": "828764ce206176a998b68625e571b1bb1681733900197",
+      "docName": "K1009 - 发货API拦截",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1009 - 发货API拦截.md"
+    },
+    {
+      "pageSign": "9b1f829db26763cb185dd119f54748111646964966070",
+      "docName": "K1008 - API调用触发限流告警",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1008 - API调用触发限流告警.md"
+    },
+    {
+      "pageSign": "008667f44027adf252e85db89158dffd1637131949730",
+      "docName": "K1007 - 接口报错：品牌资质未关联",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1007 - 接口报错：品牌资质未关联.md"
+    },
+    {
+      "pageSign": "965270fd6dd34b36725789d755c9098f1631504421466",
+      "docName": "K1006 - order operation reject",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1006 - order operation reject.md"
+    },
+    {
+      "pageSign": "1c8b711a0a211cd98c2ad5924016b5941631271533593",
+      "docName": "K1005 -接口报错：暂无站外分销推广权限",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1005 -接口报错：暂无站外分销推广权限.md"
+    },
+    {
+      "pageSign": "b396b8b7ebf9d4c1d20cb6e75f5adb5b1618228469837",
+      "docName": "K1004 - 访问接口时返回“验签失败”“签名校验失败”",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1004 - 访问接口时返回“验签失败”“签名校验失败”.md"
+    },
+    {
+      "pageSign": "9b7d7a59ee28bdb5887272963e22dd611618308028628",
+      "docName": "K1003 - 添加商品接口报错：来源不可售卖",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1003 - 添加商品接口报错：来源不可售卖.md"
+    },
+    {
+      "pageSign": "8a80df6f03933e29556e6dd2ae84633f1618307787105",
+      "docName": "K1002 - 仅支持在快手小店PC APP进行编辑",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1002 - 仅支持在快手小店PC APP进行编辑.md"
+    },
+    {
+      "pageSign": "0961d371a9c0cfb4efc5b56fcc8e45351618307540467",
+      "docName": "K1001 - 当前库存不足，请减少预留库存",
+      "path": "docs/docType_2/开放平台/API调用",
+      "filename": "K1001 - 当前库存不足，请减少预留库存.md"
+    },
+    {
+      "pageSign": "8b081a28924e7b4d2774e2845b931f941686815494024",
+      "docName": "K2003 - 如何提升应用评分",
+      "path": "docs/docType_2/开放平台/应用管理",
+      "filename": "K2003 - 如何提升应用评分.md"
+    },
+    {
+      "pageSign": "83fbca64d589f757824a3866d949bd151651906768893",
+      "docName": "K2002 - 回调地址更新",
+      "path": "docs/docType_2/开放平台/应用管理",
+      "filename": "K2002 - 回调地址更新.md"
+    },
+    {
+      "pageSign": "ecad95eff49a4971aa9ae1b0dde997fd1614328217227",
+      "docName": "K2001 - 安全扫描",
+      "path": "docs/docType_2/开放平台/应用管理",
+      "filename": "K2001 - 安全扫描.md"
+    },
+    {
+      "pageSign": "d5e7d8a906fb00979e822ed660d46a6a1659693063967",
+      "docName": "K3003 - 开发者账号如何更改企业信息",
+      "path": "docs/docType_2/开放平台/账号管理",
+      "filename": "K3003 - 开发者账号如何更改企业信息.md"
+    },
+    {
+      "pageSign": "965527d9a92c547e1b7387db53cc05931617854555660",
+      "docName": "K3002 - 开发者账号登录和更换",
+      "path": "docs/docType_2/开放平台/账号管理",
+      "filename": "K3002 - 开发者账号登录和更换.md"
+    },
+    {
+      "pageSign": "ad1902ed2da7ba13cb70374625fa4ba31618580306776",
+      "docName": "K3001 - 开发者账号如何更换类型",
+      "path": "docs/docType_2/开放平台/账号管理",
+      "filename": "K3001 - 开发者账号如何更换类型.md"
+    },
+    {
+      "pageSign": "1559b98afdf506bfb353ac082613fffa1652186635244",
+      "docName": "K4004 - 消息推送接收失败是否会重试",
+      "path": "docs/docType_2/开放平台/消息推送",
+      "filename": "K4004 - 消息推送接收失败是否会重试.md"
+    },
+    {
+      "pageSign": "1dd4870c178ec8286e24dd3190743f761635256702797",
+      "docName": "K4003 - 推送url不可达",
+      "path": "docs/docType_2/开放平台/消息推送",
+      "filename": "K4003 - 推送url不可达.md"
+    },
+    {
+      "pageSign": "48a0169e0ad7372cccfbb19c7da67a6e1635255968110",
+      "docName": "K4003 - 消息内容openId为空",
+      "path": "docs/docType_2/开放平台/消息推送",
+      "filename": "K4003 - 消息内容openId为空.md"
+    },
+    {
+      "pageSign": "807229fceb804ad7ecd4230ae8ae27c51634105867023",
+      "docName": "K4002 - 消息重复推送",
+      "path": "docs/docType_2/开放平台/消息推送",
+      "filename": "K4002 - 消息重复推送.md"
+    },
+    {
+      "pageSign": "bee5945aaeb55839653434a81743cd771634097304178",
+      "docName": "K4001 - 消息未推送",
+      "path": "docs/docType_2/开放平台/消息推送",
+      "filename": "K4001 - 消息未推送.md"
+    },
+    {
+      "pageSign": "e0d8728b3bd36e3d0ab9e0510bbc304f1678093895875",
+      "docName": "K5006- 应用是否可以直接获取明文",
+      "path": "docs/docType_2/开放平台/数据安全",
+      "filename": "K5006- 应用是否可以直接获取明文.md"
+    },
+    {
+      "pageSign": "ad5f21e8bfe1ac810cd6f8bcd07223121678092358482",
+      "docName": "K5005- 应用加密后商家解密为明文的规则",
+      "path": "docs/docType_2/开放平台/数据安全",
+      "filename": "K5005- 应用加密后商家解密为明文的规则.md"
+    },
+    {
+      "pageSign": "2948ebbb6a2c58ec9a16b7e745d435b01678088613605",
+      "docName": "K5004- 应用加密后商家如何获取明文",
+      "path": "docs/docType_2/开放平台/数据安全",
+      "filename": "K5004- 应用加密后商家如何获取明文.md"
+    },
+    {
+      "pageSign": "71d79e9250b0fccfb7f1933966071b1e1678087499830",
+      "docName": "K5003- 应用加密后商家如何发货",
+      "path": "docs/docType_2/开放平台/数据安全",
+      "filename": "K5003- 应用加密后商家如何发货.md"
+    },
+    {
+      "pageSign": "faab97caeebe1450641fd3e91e3602131678084771237",
+      "docName": "K5002- 开发者如何验证应用已完成加密",
+      "path": "docs/docType_2/开放平台/数据安全",
+      "filename": "K5002- 开发者如何验证应用已完成加密.md"
+    },
+    {
+      "pageSign": "c9e175f17585ea17c51e25d2ff4541b31634700382115",
+      "docName": "K5001 - 订单数据导出",
+      "path": "docs/docType_2/开放平台/数据安全",
+      "filename": "K5001 - 订单数据导出.md"
+    },
+    {
+      "pageSign": "3b89eed7d2becac93a6434457f4f70dd1693213275886",
+      "docName": "K6002 - 短信发送失败",
+      "path": "docs/docType_2/开放平台/业务咨询",
+      "filename": "K6002 - 短信发送失败.md"
+    },
+    {
+      "pageSign": "63b0e7e19c26ecbb158014eef6a849211639998349344",
+      "docName": "K6001 - 如何创建测试店铺",
+      "path": "docs/docType_2/开放平台/业务咨询",
+      "filename": "K6001 - 如何创建测试店铺.md"
+    },
+    {
+      "pageSign": "8dd1cbf1834d4df0f6fc57d06d68c71b1676985362003",
+      "docName": "K7006-快手服务商退出规范",
+      "path": "docs/docType_2/服务市场/账号服务",
+      "filename": "K7006-快手服务商退出规范.md"
+    },
+    {
+      "pageSign": "12281831b8e9b85e177012be52f5ed2b1635926531026",
+      "docName": "K7004-服务市场创建服务时AppKey列表空白",
+      "path": "docs/docType_2/服务市场/账号服务",
+      "filename": "K7004-服务市场创建服务时AppKey列表空白.md"
+    },
+    {
+      "pageSign": "36ecee4ed9026af9a2009ff2c43859761629964736401",
+      "docName": "K7003-开发者账号相关问题",
+      "path": "docs/docType_2/服务市场/账号服务",
+      "filename": "K7003-开发者账号相关问题.md"
+    },
+    {
+      "pageSign": "f6b24af54dda7226154724654d99fb191614737148496",
+      "docName": "K7001-服务市场常见问题",
+      "path": "docs/docType_2/服务市场/账号服务",
+      "filename": "K7001-服务市场常见问题.md"
+    },
+    {
+      "pageSign": "570f0be094584b2a4d8703459d8b83991614737024240",
+      "docName": "K8001-保证金常见问题",
+      "path": "docs/docType_2/服务市场/保证金",
+      "filename": "K8001-保证金常见问题.md"
+    },
+    {
+      "pageSign": "13d539b60c7ae577b48e58cc0393d5121639450843104",
+      "docName": "K9003-快手服务市场技术服务费常见问题",
+      "path": "docs/docType_2/服务市场/服务交易",
+      "filename": "K9003-快手服务市场技术服务费常见问题.md"
+    },
+    {
+      "pageSign": "5c9e8caef2f3f0e6568e84cdda9545311614913764743",
+      "docName": "K9002-上线交易模式常见问题（商家侧）",
+      "path": "docs/docType_2/服务市场/服务交易",
+      "filename": "K9002-上线交易模式常见问题（商家侧）.md"
+    },
+    {
+      "pageSign": "5868f4d808436b9fca9f02aa17b091061614737212541",
+      "docName": "K9001-上线交易模式常见问题（服务商侧）",
+      "path": "docs/docType_2/服务市场/服务交易",
+      "filename": "K9001-上线交易模式常见问题（服务商侧）.md"
+    }
+  ],
+  "3": [
+    {
+      "pageSign": "a068e6b0409a9ee55f5b6f5760ff9d391614263559910",
+      "docName": "开放平台入驻指南",
+      "path": "docs/docType_3/平台介绍/开放平台",
+      "filename": "开放平台入驻指南.md"
+    },
+    {
+      "pageSign": "8291dd5521eb4230e01d789ede994f631635130386865",
+      "docName": "开放平台开发者角色说明",
+      "path": "docs/docType_3/平台介绍/开放平台",
+      "filename": "开放平台开发者角色说明.md"
+    },
+    {
+      "pageSign": "4852036ba63c13df7f5fd2ddc38169581614263613785",
+      "docName": "开放平台应用开发指南",
+      "path": "docs/docType_3/平台介绍/开放平台",
+      "filename": "开放平台应用开发指南.md"
+    },
+    {
+      "pageSign": "86da831d32547d0d86a9a8cef37da5ce1614263771976",
+      "docName": "服务市场入驻指南",
+      "path": "docs/docType_3/平台介绍/服务市场",
+      "filename": "服务市场入驻指南.md"
+    },
+    {
+      "pageSign": "a96cb18622af748c96fb61d56d94c4461614263703283",
+      "docName": "平台简介",
+      "path": "docs/docType_3/平台介绍",
+      "filename": "平台简介.md"
+    },
+    {
+      "pageSign": "7964da40b7365bb46e35d69cae361cb21620701397031",
+      "docName": "新手指南",
+      "path": "docs/docType_3/开发文档",
+      "filename": "新手指南.md"
+    },
+    {
+      "pageSign": "e1d9e229332f4f233a04b44833a5dfe71614263940720",
+      "docName": "APP授权说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "APP授权说明.md"
+    },
+    {
+      "pageSign": "8cca5d25ba0015e5045a7ebec6383b741614263875756",
+      "docName": "API调用说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "API调用说明.md"
+    },
+    {
+      "pageSign": "024cdc63d29892145414b872017519e41659952772240",
+      "docName": "API限流说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "API限流说明.md"
+    },
+    {
+      "pageSign": "120a69028f0e9ea69145644317ae8bcd1614263915925",
+      "docName": "消息服务说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "消息服务说明.md"
+    },
+    {
+      "pageSign": "ed0a347be85ed2208982dee72e5298e31653894030045",
+      "docName": "集成中心说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "集成中心说明.md"
+    },
+    {
+      "pageSign": "2cb0d14623549774e8c8e06994bbcadb1614263973792",
+      "docName": "SDK使用说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "SDK使用说明.md"
+    },
+    {
+      "pageSign": "5de448fecaddd4c58104e8aea442695b1614263998209",
+      "docName": "返回码说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "返回码说明.md"
+    },
+    {
+      "pageSign": "3d4aa40abaab83c4a5f5839f6848dcb71614264033704",
+      "docName": "物流公司编号",
+      "path": "docs/docType_3/开发文档",
+      "filename": "物流公司编号.md"
+    },
+    {
+      "pageSign": "e0c97d68a1471ecc3615417450bf08ac1749196157097",
+      "docName": "订单优惠信息子类型说明",
+      "path": "docs/docType_3/开发文档",
+      "filename": "订单优惠信息子类型说明.md"
+    },
+    {
+      "pageSign": "a6c3f7cbb6dfcfc4d5f1712d8d4fc6b21614844104298",
+      "docName": "快手电商开放平台开发者协议",
+      "path": "docs/docType_3/规则协议/开放平台",
+      "filename": "快手电商开放平台开发者协议.md"
+    },
+    {
+      "pageSign": "22ee7a9d625e4221f16801f04f5b11781691494607406",
+      "docName": "快手电商开放平台隐私政策",
+      "path": "docs/docType_3/规则协议/开放平台",
+      "filename": "快手电商开放平台隐私政策.md"
+    },
+    {
+      "pageSign": "ae0f760d706893507da401448ebbb8d21694506018670",
+      "docName": "快手电商开放平台运营规则",
+      "path": "docs/docType_3/规则协议/开放平台",
+      "filename": "快手电商开放平台运营规则.md"
+    },
+    {
+      "pageSign": "9d39f2d99861d7fb00bcf1665a60cdfc1614264249470",
+      "docName": "开放平台安全开发规范",
+      "path": "docs/docType_3/规则协议/开放平台",
+      "filename": "开放平台安全开发规范.md"
+    },
+    {
+      "pageSign": "51312989e4795471e052d1d5dba730d71625457048192",
+      "docName": "开放平台日志接入规范",
+      "path": "docs/docType_3/规则协议/开放平台",
+      "filename": "开放平台日志接入规范.md"
+    },
+    {
+      "pageSign": "e759c2d7db83c850ec3146074a40da8d1616125375613",
+      "docName": "应用流量申请规则",
+      "path": "docs/docType_3/规则协议/开放平台",
+      "filename": "应用流量申请规则.md"
+    },
+    {
+      "pageSign": "32e227de68ea2c81728366cabc6cc8aa1614264216659",
+      "docName": "服务市场管理规范",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "服务市场管理规范.md"
+    },
+    {
+      "pageSign": "6551ce992896030c9456db11bbc9c43b1614264283027",
+      "docName": "服务市场上架审核标准",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "服务市场上架审核标准.md"
+    },
+    {
+      "pageSign": "699e9501c4651d79eebd7968422c8d451614264337588",
+      "docName": "入驻类目资质及保证金要求",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "入驻类目资质及保证金要求.md"
+    },
+    {
+      "pageSign": "0ec79501caa737f03f34838fcdd14ff01614264365126",
+      "docName": "智能客服类目对接流程",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "智能客服类目对接流程.md"
+    },
+    {
+      "pageSign": "0df83bc3e8000af5cf7e269ff85d6ac51614264680048",
+      "docName": "快手服务市场服务协议（用户版）",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场服务协议（用户版）.md"
+    },
+    {
+      "pageSign": "7fd428007005ceefd17e921d6645e4891614264707096",
+      "docName": "快手服务市场服务协议（服务商版）",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场服务协议（服务商版）.md"
+    },
+    {
+      "pageSign": "b032937ac94f1c7a64bf5a592e021efe1614264735882",
+      "docName": "服务市场推荐资源位规则",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "服务市场推荐资源位规则.md"
+    },
+    {
+      "pageSign": "c6208484f661fd4d015a6437bcb4276b1614264834560",
+      "docName": "服务市场类目参考价要求",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "服务市场类目参考价要求.md"
+    },
+    {
+      "pageSign": "88a62dc64f49cbcf6ec4e3d648b4858b1614264975935",
+      "docName": "快手服务市场违规处罚规范",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场违规处罚规范.md"
+    },
+    {
+      "pageSign": "270206e372e399c19dc94559efc2875e1618390447983",
+      "docName": "快手服务市场客服外包类目管理规范",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场客服外包类目管理规范.md"
+    },
+    {
+      "pageSign": "62c4a69373d87b60176a5e7dddf544f21619078882921",
+      "docName": "快手服务市场违规举报规则",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场违规举报规则.md"
+    },
+    {
+      "pageSign": "a8b616ec18c0f766a9387ac4dd9ae9061639380549323",
+      "docName": "快手服务市场技术服务费收费规则",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场技术服务费收费规则.md"
+    },
+    {
+      "pageSign": "1e4a61743af8ddc13203355e68d499761751007426845",
+      "docName": "快手服务市场「货源市场」服务商准入及清退规则",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场「货源市场」服务商准入及清退规则.md"
+    },
+    {
+      "pageSign": "6c4b69da764584a5d6a62d7a28f4e3921751007730951",
+      "docName": "快手服务市场使用三方发品接口类服务商管理规范",
+      "path": "docs/docType_3/规则协议/服务市场",
+      "filename": "快手服务市场使用三方发品接口类服务商管理规范.md"
+    },
+    {
+      "pageSign": "892a9d371390ed512b4ccdc4a71fd1721697458314879",
+      "docName": "快手电商开放平台开发者协议（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手电商开放平台开发者协议（已失效）.md"
+    },
+    {
+      "pageSign": "533208f3d406d8afb5dfe2451cff4ac31691480792877",
+      "docName": "开放平台开发者协议（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "开放平台开发者协议（已失效）.md"
+    },
+    {
+      "pageSign": "fa2e536b5f02607f6a4aa4f62d118ed21691481006005",
+      "docName": "快手服务市场服务协议（用户版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手服务市场服务协议（用户版）（已失效）.md"
+    },
+    {
+      "pageSign": "2b574832659208887e9c6892a093893c1691481157698",
+      "docName": "快手服务市场服务协议（服务商版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手服务市场服务协议（服务商版）（已失效）.md"
+    },
+    {
+      "pageSign": "5b478391d72b1907e9ba201314e1c2481646621658648",
+      "docName": "开放平台开发者协议（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "开放平台开发者协议（已失效）.md"
+    },
+    {
+      "pageSign": "63d56d03d9179051bdcfd425f93cb31e1646621569062",
+      "docName": "快手服务市场服务协议（用户版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手服务市场服务协议（用户版）（已失效）.md"
+    },
+    {
+      "pageSign": "0f25c0a413504e0b9c09002c7799a3511646621598967",
+      "docName": "快手服务市场服务协议（服务商版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手服务市场服务协议（服务商版）（已失效）.md"
+    },
+    {
+      "pageSign": "536802c026c3cc93a4b013c30348a03d1637663188353",
+      "docName": "快手电商商家授权服务协议（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手电商商家授权服务协议（已失效）.md"
+    },
+    {
+      "pageSign": "b3eba7f7d47573bbd272ea09ad04ad421637669018893",
+      "docName": "快手电商商家服务市场服务协议（商家版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手电商商家服务市场服务协议（商家版）（已失效）.md"
+    },
+    {
+      "pageSign": "a67d5901b961bcf0f6b002b5c49b4f2a1637669054772",
+      "docName": "快手电商商家服务市场服务协议（服务商版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手电商商家服务市场服务协议（服务商版）（已失效）.md"
+    },
+    {
+      "pageSign": "a67d5901b961bcf0f6b002b5c49b4f2a1637669089673",
+      "docName": "快手电商商家服务市场服务协议（服务商版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手电商商家服务市场服务协议（服务商版）（已失效）.md"
+    },
+    {
+      "pageSign": "fa2e536b5f02607f6a4aa4f62d118ed21712891036252",
+      "docName": "快手服务市场服务协议（用户版）（已失效）",
+      "path": "docs/docType_3/规则协议/历史协议",
+      "filename": "快手服务市场服务协议（用户版）（已失效）.md"
+    }
+  ]
+}

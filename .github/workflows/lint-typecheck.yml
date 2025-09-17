@@ -1,0 +1,54 @@
+name: Lint & Typecheck
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint-typecheck:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install PDM
+        run: pipx install pdm
+
+      - name: Cache PDM venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: ${{ runner.os }}-pdm-venv-${{ hashFiles('pdm.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pdm-venv-
+
+      - name: Cache PDM cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pdm
+          key: ${{ runner.os }}-pdm-cache-${{ hashFiles('pdm.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pdm-cache-
+
+      - name: Install dependencies (dev)
+        run: pdm install -G dev -v
+
+      - name: Ruff format check
+        run: pdm run python -m ruff format --check src tests examples
+
+      - name: Ruff lint
+        run: pdm run lint
+
+      - name: Pyright typecheck
+        run: pdm run typecheck

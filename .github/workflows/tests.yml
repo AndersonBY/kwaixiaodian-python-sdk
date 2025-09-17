@@ -1,0 +1,48 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install PDM
+        run: pipx install pdm
+
+      - name: Cache PDM venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: ${{ runner.os }}-pdm-venv-${{ hashFiles('pdm.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pdm-venv-
+
+      - name: Cache PDM cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pdm
+          key: ${{ runner.os }}-pdm-cache-${{ hashFiles('pdm.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pdm-cache-
+
+      - name: Install dependencies (test)
+        run: pdm install -G test -v
+
+      - name: Run tests
+        run: pdm run test
