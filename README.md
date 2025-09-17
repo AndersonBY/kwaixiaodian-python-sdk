@@ -9,6 +9,8 @@
 
 快手小店开放平台的现代化Python SDK，提供完整的异步API支持。
 
+> 📚 **[完整文档](https://andersonby.github.io/kwaixiaodian-python-sdk/)** | 🚀 **[快速开始](https://andersonby.github.io/kwaixiaodian-python-sdk/quickstart/)** | 📖 **[API参考](https://andersonby.github.io/kwaixiaodian-python-sdk/api-reference/)**
+
 ## ✨ 特性
 
 - 🚀 **异步优先** - 基于 `httpx` 的高性能异步HTTP客户端
@@ -291,7 +293,7 @@ except Exception as e:
 | **店铺管理** (shop)      | 店铺信息、设置等           | `info`, `update`, `settings`                  |
 | **直播带货** (shoplive)  | 直播商品、数据等           | `items`, `data`, `settings`                   |
 
-[查看完整API列表](docs/api-reference.md)
+[查看完整API列表](https://andersonby.github.io/kwaixiaodian-python-sdk/api-reference/)
 
 ## 🔧 高级功能
 
@@ -416,11 +418,13 @@ orders = client.order.list(access_token, seller_id, ...)
 
 ## 📖 文档
 
-- [完整API文档](docs/api-reference.md)
-- [认证指南](docs/authentication.md)  
-- [错误处理](docs/error-handling.md)
-- [最佳实践](docs/best-practices.md)
-- [更新日志](CHANGELOG.md)
+- [📚 在线文档](https://andersonby.github.io/kwaixiaodian-python-sdk/) - 完整的 API 文档和使用指南
+- [🚀 快速开始](https://andersonby.github.io/kwaixiaodian-python-sdk/quickstart/) - 快速上手指南
+- [🔐 认证指南](https://andersonby.github.io/kwaixiaodian-python-sdk/authentication/) - OAuth 认证配置
+- [⚠️ 错误处理](https://andersonby.github.io/kwaixiaodian-python-sdk/error-handling/) - 异常处理最佳实践
+- [💡 最佳实践](https://andersonby.github.io/kwaixiaodian-python-sdk/best-practices/) - 开发建议和技巧
+- [📋 API 参考](https://andersonby.github.io/kwaixiaodian-python-sdk/api-reference/) - 完整的 API 接口文档
+- [📝 更新日志](CHANGELOG.md) - 版本更新记录
 
 ## 🤝 贡献
 
@@ -463,7 +467,7 @@ pdm run typecheck
 
 - 📧 邮箱: support@kwaixiaodian.com
 - 🐛 Issue: [GitHub Issues](https://github.com/AndersonBY/kwaixiaodian-python-sdk/issues)
-- 📖 文档: [在线文档](https://kwaixiaodian-python-sdk.readthedocs.io)
+- 📖 文档: [在线文档](https://andersonby.github.io/kwaixiaodian-python-sdk/)
 
 ---
 
