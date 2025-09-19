@@ -42,17 +42,7 @@ from .exceptions import (
     KwaixiaodianSignatureError,
 )
 
-try:
-    from importlib.metadata import version
-except ImportError:
-    # Python < 3.8
-    from importlib_metadata import version  # type: ignore
-
-try:
-    __version__ = version("kwaixiaodian")
-except Exception:
-    # Fallback version for development
-    __version__ = "0.0.0+dev"
+__version__ = "1.0.3"
 __author__ = "Kuaishou SDK Team"
 __email__ = "support@kwaixiaodian.com"
 __description__ = "快手小店开放平台Python SDK - 全功能异步客户端库"

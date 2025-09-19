@@ -34,14 +34,15 @@ license = {text = "MIT"}
 name = "kwaixiaodian"
 readme = "README.md"
 requires-python = ">=3.8"
-dynamic = ["version"]
+version = "1.0.3"
 
 [project.optional-dependencies]
 dev = [
-  "ruff>=0.1.0",
-  "pyright>=1.1.0",
-  "pre-commit>=3.0.0",
-  "types-requests",
+    "ruff>=0.1.0",
+    "pyright>=1.1.0",
+    "pre-commit>=3.0.0",
+    "types-requests",
+    "build",
 ]
 docs = [
   "mkdocs>=1.5.0",
@@ -67,8 +68,6 @@ Repository = "https://github.com/AndersonBY/kwaixiaodian-python-sdk"
 [tool.pdm]
 distribution = true
 
-[tool.pdm.version]
-source = "scm"
 
 [tool.pdm.dev-dependencies]
 dev = [

@@ -48,6 +48,20 @@ jobs:
     - name: Run type checking
       run: pdm run typecheck
 
+    - name: Update version numbers
+      run: |
+        # Extract version from tag
+        VERSION=${GITHUB_REF#refs/tags/v}
+        echo "Updating to version $VERSION"
+
+        # Update pyproject.toml
+        sed -i "s/version = \".*\"/version = \"$VERSION\"/" pyproject.toml
+
+        # Update __init__.py
+        sed -i "s/__version__ = \".*\"/__version__ = \"$VERSION\"/" src/kwaixiaodian/__init__.py
+
+        echo "Version updated to $VERSION"
+
     - name: Build package
       run: pdm build
 
