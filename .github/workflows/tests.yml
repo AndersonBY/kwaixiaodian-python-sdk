@@ -22,24 +22,32 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
       - name: Install PDM
         run: pipx install pdm
+
+      - name: Configure PDM to use uv
+        run: pdm config use_uv true
 
       - name: Cache PDM venv
         uses: actions/cache@v4
         with:
           path: .venv
-          key: ${{ runner.os }}-pdm-venv-${{ hashFiles('pdm.lock') }}
+          key: ${{ runner.os }}-pdm-uv-venv-${{ hashFiles('pdm.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pdm-venv-
+            ${{ runner.os }}-pdm-uv-venv-
 
-      - name: Cache PDM cache
+      - name: Cache uv cache
         uses: actions/cache@v4
         with:
-          path: ~/.cache/pdm
-          key: ${{ runner.os }}-pdm-cache-${{ hashFiles('pdm.lock') }}
+          path: ~/.cache/uv
+          key: ${{ runner.os }}-uv-cache-${{ hashFiles('pdm.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pdm-cache-
+            ${{ runner.os }}-uv-cache-
 
       - name: Install dependencies (test)
         run: pdm install -G test -v
