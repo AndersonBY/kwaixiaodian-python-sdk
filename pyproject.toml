@@ -26,6 +26,7 @@ dependencies = [
   "orjson>=3.8.0",
   "cryptography>=41.0.0",
   "pendulum>=3.0.0",
+  "importlib-metadata>=1.0; python_version<'3.8'",
 ]
 description = "快手小店开放平台Python SDK - 全功能异步客户端库"
 keywords = ["kuaishou", "ecommerce", "api", "sdk", "快手小店"]
@@ -33,7 +34,7 @@ license = {text = "MIT"}
 name = "kwaixiaodian"
 readme = "README.md"
 requires-python = ">=3.8"
-version = "1.0.2"
+dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = [
@@ -65,6 +66,9 @@ Repository = "https://github.com/AndersonBY/kwaixiaodian-python-sdk"
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.version]
+source = "scm"
 
 [tool.pdm.dev-dependencies]
 dev = [
