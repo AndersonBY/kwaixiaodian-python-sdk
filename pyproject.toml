@@ -69,6 +69,8 @@ distribution = true
 
 [tool.pdm.version]
 source = "scm"
+write_to = "src/kwaixiaodian/_version.py"
+write_template = "__version__ = '{}'"
 
 [tool.pdm.dev-dependencies]
 dev = [
